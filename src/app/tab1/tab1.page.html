@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let article of data?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!--<div *ngIf {{article.urlToImage}} = null>-->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+
+    <!-- <ion-card-content>
+      <p>{{article.urlToImage}}</p>
+    </ion-card-content> -->
+
+  </ion-card>
+
+  <ion-card *ngFor="let article of data1?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!-- <div *ngIf="!article.urlToImage"> -->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let article of data2?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!-- <div *ngIf article.urlToImage != null> -->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let article of data3?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!-- <div *ngIf article.urlToImage != null> -->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let article of data4?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!-- <div *ngIf article.urlToImage != null> -->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let article of data5?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!-- <div *ngIf article.urlToImage != null> -->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let article of data6?.articles" (click)="onGoToNewsSinglePage(article)">
+    <!-- <div *ngIf article.urlToImage != null> -->
+    <ion-img [src]="article.urlToImage" (click)="onGoToNewsSinglePage(article)"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

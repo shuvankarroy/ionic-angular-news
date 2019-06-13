@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{article.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <!--<div *ngIf {{article.urlToImage}} = null>-->
+      <ion-img [src]="article.urlToImage"></ion-img>
+    <!-- </div> -->
+    <ion-card-header>
+      <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-header>
+      <ion-card-title>Brief Description</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{article.description}}</p>
+    </ion-card-content>
+    
+    <ion-card-header>
+      <ion-card-title>Deatiled Description</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>{{article.content}}</p>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
